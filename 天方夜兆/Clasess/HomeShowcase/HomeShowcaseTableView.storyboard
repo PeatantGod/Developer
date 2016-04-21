@@ -64,16 +64,25 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="b26-cO-zzj" secondAttribute="trailing" id="3NA-5b-j4J"/>
                             <constraint firstItem="b26-cO-zzj" firstAttribute="top" secondItem="FJZ-yB-LIY" secondAttribute="top" id="g3Z-Nh-22l"/>
                             <constraint firstItem="b26-cO-zzj" firstAttribute="leading" secondItem="FJZ-yB-LIY" secondAttribute="leading" id="h6Y-Dd-Pju"/>
                             <constraint firstItem="b26-cO-zzj" firstAttribute="bottom" secondItem="LWd-n3-QzP" secondAttribute="top" id="hTP-ED-wc5"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ert-05-wHB" appends="YES" id="tFQ-hL-McL"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="panGesture" destination="Ert-05-wHB" id="0bj-5i-7ZP"/>
+                        <outlet property="tableView" destination="b26-cO-zzj" id="NT6-FI-IyV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfe-Pm-n1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Ert-05-wHB"/>
             </objects>
             <point key="canvasLocation" x="2336" y="-19"/>
         </scene>
